@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard - Wina Artika Devi SI-3E</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- ================= SIDEBAR KIRI ================= -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            Royal <span>Dashboard</span>
+        </div>
+
+        <nav>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#statistik" class="nav-link">Mahasiswa</a>
+            <a href="#progres" class="nav-link">Kelas</a>
+            <a href="#aktifitas" class="nav-link">Aktifitas</a>
+            <a href="#statistik" class="nav-link">Statistik</a>
+            <a href="#dokumen" class="nav-link">Dokumen</a>
+            <a href="#dokumen" class="nav-link">Settings</a>
+        </nav>
+
+        <a href="#home" class="signout nav-link">Sign Out</a>
+
+    </aside>
+
+    <!-- ================= ISI TENGAH ================= -->
+    <main>
+
+        <!-- SEARCH + PROFIL -->
+        <header>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari Kelas, Dokumen, Aktifitas dll..."
+            >
+
+            <div class="profile-mini">
+                <img src="wina.jpeg" alt="Wina Artika Devi">
+                <div>
+                    <b>Wina Artika Devi</b>
+                    <small>SI-3E</small>
+                </div>
+            </div>
+        </header>
+
+        <!-- WELCOME BIRU -->
+        <section class="welcome" id="home">
+            <div>
+                <h1>Selamat Datang, Wina Artika Devi</h1>
+                <p>Kelas SI-3E</p>
+                <p>
+                    Kamu memiliki Statistik, 3 Progres Kelas, 4 Aktifitas
+                    Selanjutnya dan 3 Lampiran Dokumen yang ada pada
+                    aplikasi ini.
+                </p>
+            </div>
+
+            <img
+                src="wina.jpeg"
+                class="foto-profil"
+                alt="Foto Ratulia Delfira Purba SI-3E"
+            >
+        </section>
+
+        <!-- BARIS 1 : 3 KOLOM SEJAJAR -->
+        <div class="grid-3">
+
+            <!-- STATISTIK -->
+            <section class="card" id="statistik">
+                <div class="card-head">
+                    <h3>Statistik Mahasiswa</h3>
+                    <span>Avg Point</span>
+                </div>
+
+                <div class="chart-wrap">
+                    <img
+                        src="chart-statistik.jpeg"
+                        class="img-chart"
+                        alt="Statistik Mahasiswa"
+                    >
+                </div>
+            </section>
+
+            <!-- PROGRES KELAS -->
+            <section class="card" id="progres">
+                <h3>Progres Kelas</h3>
+
+                <div class="progres-item">
+                    <b>Matakuliah A</b>
+                    <small>78 Pendaftar</small>
+                    <div class="bar">
+                        <i style="width:78%"></i>
+                    </div>
+                </div>
+
+                <div class="progres-item">
+                    <b>Matakuliah B</b>
+                    <small>30 Pendaftar</small>
+                    <div class="bar">
+                        <i style="width:30%"></i>
+                    </div>
+                </div>
+
+                <div class="progres-item">
+                    <b>Matakuliah C</b>
+                    <small>40 Pendaftar</small>
+                    <div class="bar">
+                        <i style="width:40%"></i>
+                    </div>
+                </div>
+
+                <div class="progres-item">
+                    <b>Matakuliah D</b>
+                    <small>10 Pendaftar</small>
+                    <div class="bar">
+                        <i style="width:10%"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AKTIFITAS -->
+            <section class="card" id="aktifitas">
+                <h3>Aktifitas Selanjutnya</h3>
+
+                <ul class="aktifitas">
+                    <li>
+                        <b>Senin, 15 Januari 2025</b>
+                        <span>Perkuliahan Daring 1</span>
+                    </li>
+                    <li>
+                        <b>Selasa, 15 Februari 2025</b>
+                        <span>Perkuliahan Daring 1</span>
+                    </li>
+                    <li>
+                        <b>Rabu, 15 Maret 2025</b>
+                        <span>Perkuliahan Daring 1</span>
+                    </li>
+                    <li>
+                        <b>Kamis, 15 April 2025</b>
+                        <span>Perkuliahan Daring 1</span>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- BARIS 2 : DOKUMEN DOANG, LEBAR PENUH -->
+        <div class="grid-1">
+
+            <section class="card" id="dokumen">
+                <h3>Lampiran Dokumen</h3>
+
+                <div class="doc">
+                    <div>
+                        <b>Lampiran Dokumen 1 - Matakuliah A</b>
+                        <span>| Tugas Bersama Perkuliahan Daring |</span>
+                    </div>
+                    <button class="btn-dokumen" onclick="lihatDokumen('Dokumen 1 - Matakuliah A')">
+                        Lihat Dokumen
+                    </button>
+                </div>
+
+                <div class="doc">
+                    <div>
+                        <b>Lampiran Dokumen 2 - Matakuliah B</b>
+                        <span>| Tugas Bersama Perkuliahan Daring |</span>
+                    </div>
+                    <button class="btn-dokumen" onclick="lihatDokumen('Dokumen 2 - Matakuliah B')">
+                        Lihat Dokumen
+                    </button>
+                </div>
+
+                <div class="doc">
+                    <div>
+                        <b>Lampiran Dokumen 3 - Matakuliah C</b>
+                        <span>| Tugas Bersama Perkuliahan Daring |</span>
+                    </div>
+                    <button class="btn-dokumen" onclick="lihatDokumen('Dokumen 3 - Matakuliah C')">
+                        Lihat Dokumen
+                    </button>
+                </div>
+
+            </section>
+
+        </div>
+
+        <footer>
+            © 2026 Royal Dashboard - Ratulia Delfira Purba | SI-3E
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
